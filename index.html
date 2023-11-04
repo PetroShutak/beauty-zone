@@ -15,33 +15,39 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container">
-      <nav>
-        <ul>
-          <li>
-            <a href="#"> <span>beauty zone</span></a>
-          </li>
+    <header>
+      <p class="visually-hidden"></p>
+      <nav class="nav_bar">
+        <div class="nav_bar__logo">
+          <a href="#">
+            <span
+              >beauty <br />
+              zone</span
+            ></a
+          >
+        </div>
+        <ul class="nav_list">
           <li><a href="#">Про нас</a></li>
           <li><a href="#">Чому ми</a></li>
           <li><a href="#">Процедури</a></li>
           <li><a href="#">Контакти</a></li>
         </ul>
         <div>
-          <ul>
-            <li>
+          <ul class="social_list">
+            <li class="social_item">
               <a href="#">
-                <img src="" alt="telefon" />
+                <img src="./images/phone.svg" alt="telefon" />
               </a>
             </li>
 
-            <li>
+            <li class="social_item">
               <a href="#">
-                <img src="" alt="instagram" />
+                <img src="./images/instagram.svg" alt="instagram" />
               </a>
             </li>
-            <li>
+            <li class="social_item">
               <a href="#">
-                <img src="" alt="facebook" />
+                <img src="./images/facebook.svg" alt="facebook" />
               </a>
             </li>
           </ul>
@@ -51,105 +57,162 @@
     <main>
       <!-- Hero section -->
       <section>
-        <div class="hero">
-          <div>
+        <div class="hero section">
+          <div class="hero_content">
             <p>Косметологічна клініка</p>
-            <h1>
-              <span>beauty zone</span>
+            <h1 class="hero_title">
+              <span
+                >beauty <br />
+                zone</span
+              >
             </h1>
-            <button>Замовити дзвінок</button>
-            <p>
-              Запишись та отримай безкоштовну консультацію нашого косметолога
-            </p>
+            <button class="hero_button">Замовити дзвінок</button>
+            <div class="hero_subtitle">
+              <p>
+                Запишись та отримай безкоштовну консультацію нашого косметолога
+              </p>
+            </div>
           </div>
-          <h2>Перевтілюйтесь в <span> beauty zone! </span></h2>
-          <p>
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p>
-            B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
-            приємний сервіс. Наші косметологічні процедури та препарати
-            допоможуть вам підтримувати свою красу та молодість. З нами краса
-            назавжди!
-          </p>
+        </div>
+      </section>
+      <section>
+        <div class="reincarnation_section container">
+          <div>
+            <h2 class="reincarnation_title">
+              Перевтілюйтесь <br />
+              в <span> beauty zone! </span>
+            </h2>
+            <div class="reincarnation_description">
+              <p class="first_paragraph">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p>
+                B <span class="reincarnation_span">beauty zone</span> ми
+                гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+                косметологічні процедури та препарати допоможуть вам
+                підтримувати свою красу та молодість. З нами краса назавжди!
+              </p>
+            </div>
+          </div>
+          <div class="reincarnation_image">
+            <div class="top_image_group">
+              <img
+                src="./images/before.jpg"
+                alt="Фото до процедури"
+                width="327px"
+                height="327px"
+                style="border-radius: 50%"
+              />
+              <img
+                src="./images/star.png"
+                alt="Зірка"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <img
+              src="./images/star.png"
+              alt="Зірка"
+              width="16px"
+              height="16px"
+              style="float: right"
+            />
+            <div class="bottom_image_group">
+              <img
+                src="./images/star.png"
+                alt="Зірка"
+                width="64px"
+                height="64px"
+              />
+              <img
+                src="./images/after.jpg"
+                alt="Фото після процедури"
+                width="327px"
+                height="327px"
+                style="border-radius: 50%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="what-section section">
+          <h2>
+            Чому люди
+            <span>обирають нас</span>
+          </h2>
+          <ul>
+            <li>
+              <svg>
+                <use href="#"></use>
+              </svg>
+              <p>
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
+            </li>
+            <li>
+              <svg>
+                <use href="#"></use>
+              </svg>
+              <p>
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
+            </li>
+            <li>
+              <svg>
+                <use href="#"></use>
+              </svg>
+              <p>
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="section">
+          <h2>Наші <span> процедури</span></h2>
+          <!-- Сладер -->
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="section">
+          <h2>
+            Як нас
+            <span> знайти </span>
+          </h2>
+          <div>
+            <!-- location -->
+          </div>
+          <div>
+            <form>
+              <p>
+                Запишіться
+                <span>безкоштовно</span>
+                та отримайте подарунок
+              </p>
+              <input type="text" placeholder="Ваше ім'я" />
+              <input type="tel" placeholder="Ваш телефон" />
+              <input type="email" placeholder="Ваш email" />
+              <button>Записатись безкоштовно</button>
+              <p>
+                Натискаючи на кнопку я погоджуюсь з
+                <a href="">політикою конфіденційності </a>
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
-    <section>
-      <div>
-        <h2>
-          Чому люди
-          <span>обирають нас</span>
-        </h2>
-        <ul>
-          <li>
-            <svg>
-              <use href="#"></use>
-            </svg>
-            <p>
-              Всі наші косметологи мають вищу медичну освіту та стаж роботи від
-              5 років
-            </p>
-          </li>
-          <li>
-            <svg>
-              <use href="#"></use>
-            </svg>
-            <p>
-              Використовуємо тільки професійне обладнання та косметику,
-              перевірену часом
-            </p>
-          </li>
-          <li>
-            <svg>
-              <use href="#"></use>
-            </svg>
-            <p>
-              Наша мета - підкреслити переваги та приховати недоліки, а не
-              переробити
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h2>Наші <span> процедури</span></h2>
-        <!-- Сладер -->
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <h2>
-        Як нас
-        <span> знайти </span>
-      </h2>
-      <div>
-        <!-- location -->
-      </div>
-      <div>
-        <form action="">
-          <p>
-            Запишіться
-            <span>безкоштовно</span>
-            та отримайте подарунок
-          </p>
-          <input type="text" placeholder="Ваше ім'я" />
-          <input type="tel" placeholder="Ваш телефон" />
-          <input type="email" placeholder="Ваш email" />
-          <button>Записатись безкоштовно</button>
-          <p>
-            Натискаючи на кнопку я погоджуюсь з
-            <a href="">політикою конфіденційності </a>
-          </p>
-        </form>
-      </div>
-    </section>
     <footer>
       <div class="footer"></div>
     </footer>
