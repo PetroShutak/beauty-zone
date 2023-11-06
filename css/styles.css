@@ -125,7 +125,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: #FFFFFF40;
+  background-color: #ffffff40;
 }
 
 .nav_bar {
@@ -135,7 +135,7 @@ header {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(3px);
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.18);  */ 
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.18);  */
 }
 
 .nav_list {
@@ -207,6 +207,11 @@ header {
   padding: 16px 32px;
   border-radius: 32px;
   margin-bottom: 8px;
+}
+
+.hero_button:hover {
+  background-color: var(--color-brand-black);
+  color: var(--color-white);
 }
 
 /* reincarnation_section */
@@ -417,6 +422,7 @@ header {
 
 .why_section_cart_list {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   font-size: 18px;
   font-weight: 400;
@@ -489,6 +495,48 @@ header {
 
 .swiper-pagination-bullet-active {
   background-color: var(--color-brand-blue);
+}
+
+.custom_swiper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.icon_arrow {
+  width: 44px;
+  height: 44px;
+  border: 0.5px solid var(--color-brand-black2);
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: var(--color-brand-black2);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.icon_arrow_next {
+  width: 44px;
+  height: 44px;
+  border: 0.5px solid var(--color-brand-black2);
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: var(--color-brand-black2);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  rotate: 180deg;
+}
+
+.icon_arrow:hover {
+  background-color: var(--color-brand-blue);
+  fill: var(--color-white);
+  border: 0.5px solid var(--color-brand-blue);
+}
+.icon_arrow_next:hover {
+  border: 0.5px solid var(--color-brand-blue);
+  background-color: var(--color-brand-blue);
+  fill: var(--color-white);
 }
 
 /* footer */
