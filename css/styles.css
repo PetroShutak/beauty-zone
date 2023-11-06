@@ -160,18 +160,15 @@ header {
 }
 
 .hero {
+  padding: 120px 0;
   background-image: url('../images/background.jpg');
-  background-position: center;
-  /* background-repeat: no-repeat; */
+  background-position: center top;
   background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
-  position: relative;
+  /* background-attachment: fixed; */
 }
 .hero_content {
-  /* width: 529px; */
-  /* height: 408px; */
+  /* width: 529px;
+  height: 408px; */
   padding-left: 206px;
   display: flex;
   flex-direction: column;
@@ -199,7 +196,6 @@ header {
   font-weight: 400;
   line-height: 18px;
   color: var(--color-brand-black2);
-  /* margin-bottom: 32px; */
 }
 .hero_button {
   width: 219px;
@@ -220,6 +216,7 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  padding: 40px 0;
 }
 .reincarnation_title {
   font-size: 64px;
@@ -269,11 +266,11 @@ header {
   background-image: url('../images/background-section.jpg');
   background-size: cover;
   color: var(--color-brand-black);
+  padding: 60px 0;
 }
 .why_section_content {
   display: flex;
   flex-direction: column;
-  padding: 120px 0;
 }
 .why_section_title {
   margin: 0 auto;
@@ -310,7 +307,6 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
   background-color: var(--color-white);
   border-radius: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -322,10 +318,15 @@ header {
 }
 
 /* procedurs */
+.procedurs_section {
+  padding: 60px 0;
+}
+
 
 .procedurs_section_content {
   display: flex;
   flex-direction: column;
+  
 }
 .procedurs_section_title {
   margin: 0 auto;
