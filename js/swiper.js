@@ -2,8 +2,8 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 3,
-  spaceBetween: 30,
+  // slidesPerView: 3,
+  // spaceBetween: 30,
   navigation: {
     nextEl: '#custom-next-button',
     prevEl: '#custom-prev-button',
@@ -26,6 +26,27 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
+  },
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 });
 
