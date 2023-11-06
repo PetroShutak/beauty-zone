@@ -125,6 +125,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
+  background-color: #FFFFFF40;
 }
 
 .nav_bar {
@@ -134,7 +135,7 @@ header {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(3px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.18);  */ 
 }
 
 .nav_list {
@@ -164,11 +165,9 @@ header {
   background-image: url('../images/background.jpg');
   background-position: center top;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 .hero_content {
-  /* width: 529px;
-  height: 408px; */
   padding-left: 206px;
   display: flex;
   flex-direction: column;
@@ -498,8 +497,6 @@ header {
   background-image: url('../images/footer-bg.png');
   background-position: right bottom;
   background-repeat: no-repeat;
-  color: var(--color-white);
-  height: 278px;
 }
 
 .social_icon {
@@ -507,8 +504,12 @@ header {
 }
 
 .footer_flex {
+  padding: 56px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
+  background-image: url('../images/footer-line.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  color: var(--color-white);
+  height: 278px;
 }
