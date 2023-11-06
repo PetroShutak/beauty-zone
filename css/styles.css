@@ -214,9 +214,20 @@ header {
 
 .reincarnation_section {
   display: flex;
-  justify-content: space-between;
   gap: 40px;
   padding: 40px 0;
+}
+.reincarnation_image {
+  position: relative;
+}
+
+.top_image {
+  display: block;
+  margin-bottom: 40px;
+}
+.bottom_image {
+  display: block;
+  padding-left: 196px;
 }
 .reincarnation_title {
   font-size: 64px;
@@ -249,17 +260,129 @@ header {
   font-weight: 700;
 }
 
+/* ----stars */
+.star-blue::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url('../images/about-star-blue.png');
+  background-size: 40px;
+  animation-name: star-blue;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star-blue {
+  40% {
+    transform: rotate(180deg) scale(1.1);
+  }
+
+  70% {
+    transform: rotate(260deg) scale(1.3);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.star-dark::before {
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 361px;
+  right: 332px;
+  background-repeat: no-repeat;
+  background-image: url('../images/about-star-dark.png');
+  background-size: 64px;
+  animation-name: star-dark;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star-dark {
+  40% {
+    transform: rotate(180deg) scale(1.1);
+  }
+
+  70% {
+    transform: rotate(260deg) scale(1.3);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.star-small::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 277px;
+  right: 35px;
+  background-repeat: no-repeat;
+  background-image: url('../images/about-star-small.png');
+  background-size: 16px;
+  animation-name: star-small;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star-small {
+  40% {
+    transform: rotate(180deg) scale(1.1);
+  }
+
+  70% {
+    transform: rotate(260deg) scale(1.3);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.star-dark-mobile::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 563px;
+  right: 83px;
+  background-repeat: no-repeat;
+  background-image: url('../images/about-star-dark.png');
+  background-size: 40px;
+  animation-name: star-dark-mobile;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star-dark-mobile {
+  40% {
+    transform: rotate(180deg) scale(1.02);
+  }
+
+  70% {
+    transform: rotate(260deg) scale(1.05);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* ----/stars */
+
 @media screen and (max-width: 1124px) {
   .reincarnation_image {
     display: none;
   }
-}
-.top_image_group {
-  display: flex;
-}
-.bottom_image_group {
-  display: flex;
-  flex-direction: column;
 }
 
 .why_section {
@@ -322,11 +445,9 @@ header {
   padding: 60px 0;
 }
 
-
 .procedurs_section_content {
   display: flex;
   flex-direction: column;
-  
 }
 .procedurs_section_title {
   margin: 0 auto;
@@ -382,7 +503,7 @@ header {
 }
 
 .social_icon {
-  fill: var(--color-white)
+  fill: var(--color-white);
 }
 
 .footer_flex {
