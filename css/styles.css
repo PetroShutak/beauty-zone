@@ -145,6 +145,12 @@ header {
   font-size: 18px;
   font-weight: 700;
 }
+.nav_list_item {
+  transition: all 0.3s ease-in-out;
+}
+.nav_list_item:hover {
+  color: var(--color-brand-blue);
+}
 
 .nav_bar__logo {
   font-size: 22px;
@@ -152,12 +158,26 @@ header {
   line-height: 21px;
   color: var(--color-brand-blue);
   text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_bar__logo:hover {
+  scale: 1.1;
 }
 
 .social_list {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+/* #011C44 */
+.social_icon_header {
+  fill: #011c44;
+  transition: all 0.3s ease-in-out;
+}
+.social_icon_header:hover {
+  fill: var(--color-brand-blue);
 }
 
 .hero {
@@ -207,6 +227,7 @@ header {
   padding: 16px 32px;
   border-radius: 32px;
   margin-bottom: 8px;
+  transition: all 0.3s ease-in-out;
 }
 
 .hero_button:hover {
@@ -438,6 +459,10 @@ header {
   background-color: var(--color-white);
   border-radius: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.why_section_cart_item:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
 }
 .why_section_cart_item_img {
   width: 48px;
@@ -513,6 +538,7 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
+  transition: all 0.3s ease-in-out;
 }
 
 .icon_arrow_next {
@@ -526,6 +552,7 @@ header {
   justify-content: center;
   display: flex;
   transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
 }
 
 .icon_arrow:hover {
@@ -591,8 +618,10 @@ header {
   justify-content: center;
 }
 .contacts_form_title {
-  font-size: 24px;
-  font-weight: 700;
+  margin: 0 auto;
+  width: 274px;
+  font-size: 22px;
+  font-weight: 600;
   line-height: 1.2;
   color: var(--color-white);
 }
@@ -609,6 +638,16 @@ header {
   font-weight: 400;
   line-height: 1.2;
   color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.contacts_form input::placeholder {
+  color: var(--color-white);
+  font-size: 13px;
+  font-weight: 400;
+}
+.contacts_form input:hover {
+  border: 0.5px solid var(--color-brand-blue);
 }
 
 .contacts_form button {
@@ -621,6 +660,7 @@ header {
   font-weight: 600;
   line-height: 21px;
   color: var(--color-white);
+  transition: all 0.3s ease-in-out;
 }
 
 .contacts_form button:hover {
@@ -649,6 +689,9 @@ header {
 .social_icon {
   fill: var(--color-white);
 }
+.social_icon:hover {
+  fill: var(--color-brand-blue);
+}
 
 .footer_flex {
   padding: 56px 0;
@@ -659,4 +702,56 @@ header {
   background-repeat: no-repeat;
   color: var(--color-white);
   height: 278px;
+}
+.footer_title {
+  width: 83px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-brand-blue);
+  text-transform: capitalize;
+}
+
+.footer_menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer_menu_item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+.footer_menu_item:hover {
+  color: var(--color-brand-blue);
+}
+
+.footer_contacts_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 174px;
+}
+.social_footer_list {
+  display: flex;
+  gap: 24px;
+}
+
+.footer_policice_confidence_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.policice_confidence:hover {
+  text-decoration: underline var(--color-white) 1px solid;
+}
+
+.footer_copyright {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-grey);
 }

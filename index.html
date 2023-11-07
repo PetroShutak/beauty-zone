@@ -33,27 +33,32 @@
             >
           </div>
           <ul class="nav_list">
-            <li><a href="#">Про нас</a></li>
-            <li><a href="#why">Чому ми</a></li>
-            <li><a href="#procedures">Процедури</a></li>
-            <li><a href="#contacts">Контакти</a></li>
+            <li class="nav_list_item"><a href="#about">Про нас</a></li>
+            <li class="nav_list_item"><a href="#why">Чому ми</a></li>
+            <li class="nav_list_item"><a href="#procedures">Процедури</a></li>
+            <li class="nav_list_item"><a href="#contacts">Контакти</a></li>
           </ul>
           <div>
             <ul class="social_list">
-              <li class="social_item">
+              <li>
                 <a href="#">
-                  <img src="./images/phone.svg" alt="telefon" />
+                  <svg class="social_icon_header" width="32" height="32">
+                    <use href="./images/icon.svg#icon-phone"></use>
+                  </svg>
                 </a>
               </li>
-
-              <li class="social_item">
+              <li>
                 <a href="#">
-                  <img src="./images/instagram.svg" alt="instagram" />
+                  <svg class="social_icon_header" width="32" height="32">
+                    <use href="./images/icon.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="social_item">
+              <li>
                 <a href="#">
-                  <img src="./images/facebook.svg" alt="facebook" />
+                  <svg class="social_icon_header" width="32" height="32">
+                    <use href="./images/icon.svg#icon-facebook"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -80,7 +85,7 @@
         </div>
       </section>
       <!-- reincarnation_section -->
-      <section>
+      <section id="about">
         <div class="container">
           <div class="reincarnation_section">
             <div>
@@ -138,7 +143,7 @@
                 <span>обирають нас</span>
               </h2>
               <div class="why_section_cart_group">
-                <ul class="why_section_cart_list">
+                <ul class="why_section_cart_list text_font_roboto">
                   <li class="why_section_cart_item">
                     <img
                       class="why_section_cart_item_img"
@@ -207,7 +212,9 @@
                         src="./images/procedures-woman.png"
                         alt="First Client"
                       />
-                      <p class="procedures-card__text">Маски для обличчя</p>
+                      <p class="procedures-card__text text_font_roboto">
+                        Маски для обличчя
+                      </p>
                     </div>
                     <div class="swiper-slide">
                       <img
@@ -215,7 +222,9 @@
                         src="./images/procedures-woman2.png"
                         alt="Second Client"
                       />
-                      <p class="procedures-card__text">Ін'єкції для обличчя</p>
+                      <p class="procedures-card__text text_font_roboto">
+                        Ін'єкції для обличчя
+                      </p>
                     </div>
                     <div class="swiper-slide">
                       <img
@@ -223,7 +232,9 @@
                         src="./images/procedures-woman3.png"
                         alt="Third Client"
                       />
-                      <p class="procedures-card__text">Очищення обличчя</p>
+                      <p class="procedures-card__text text_font_roboto">
+                        Очищення обличчя
+                      </p>
                     </div>
                     <div class="swiper-slide">
                       <img
@@ -284,7 +295,7 @@
               Як нас
               <span> знайти </span>
             </h2>
-            <div class="contacts_content">
+            <div class="contacts_content text_font_roboto">
               <div>
                 <!-- location -->
                 <iframe
@@ -322,47 +333,52 @@
         <div class="container">
           <div class="footer_flex">
             <a href="#home">
-              <h2>beauty <span>zone</span></h2></a
+              <h2 class="footer_title">beauty <span>zone</span></h2></a
             >
-            <ul>
-              <li><a href="#">Про нас</a></li>
-              <li><a href="#">Чому ми</a></li>
-              <li><a href="#">Наші процедури</a></li>
-              <li><a href="#">Контакти</a></li>
+            <ul class="footer_menu_list">
+              <li class="footer_menu_item"><a href="#about">Про нас</a></li>
+              <li class="footer_menu_item"><a href="#why">Чому ми</a></li>
+              <li class="footer_menu_item">
+                <a href="#procedures">Наші процедури</a>
+              </li>
+              <li class="footer_menu_item"><a href="#contacts">Контакти</a></li>
             </ul>
-            <ul>
+            <ul class="footer_contacts_list">
               <li><a href="#">+ 38 (096) 000 00 07</a></li>
               <li><a href="#">beautyzone@gmail.com</a></li>
               <li><a href="#">Україна, м. Київ, вул. Тараса Шевченка 5</a></li>
-
-              <li>
-                <a href="#">
-                  <svg class="social_icon" width="42" height="42">
-                    <use xlink:href="./images/icon.svg#icon-phone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="social_icon" width="42" height="42">
-                    <use xlink:href="./images/icon.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="social_icon" width="42" height="42">
-                    <use xlink:href="./images/icon.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
+              <div class="social_footer_list">
+                <li>
+                  <a href="#">
+                    <svg class="social_icon" width="42" height="42">
+                      <use xlink:href="./images/icon.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="social_icon" width="42" height="42">
+                      <use xlink:href="./images/icon.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="social_icon" width="42" height="42">
+                      <use xlink:href="./images/icon.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </div>
             </ul>
-            <ul>
-              <li>
-                <p>Політика конфіденційності</p>
+            <ul class="footer_policice_confidence_list">
+              <li class="policice_confidence">
+                <a href="#">
+                  Політика конфіденційності
+                </a>
               </li>
               <li>
-                <p>© 2023 Дані захищені.</p>
+                <p class="footer_copyright">© 2023 Дані захищені.</p>
               </li>
             </ul>
           </div>
