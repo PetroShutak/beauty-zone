@@ -279,30 +279,39 @@
 
       <section id="contacts">
         <div class="container">
-          <div class="section">
-            <h2>
+          <div class="contacts_section">
+            <h2 class="contacts_section_title">
               Як нас
               <span> знайти </span>
             </h2>
-            <div>
-              <!-- location -->
-            </div>
-            <div>
-              <form>
-                <p>
-                  Запишіться
-                  <span>безкоштовно</span>
-                  та отримайте подарунок
+            <div class="contacts_content">
+              <div>
+                <!-- location -->
+                <iframe
+                  class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.932390054574!2d30.51560037669296!3d50.442359987946055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699373417604!5m2!1suk!2sua"
+                  style="border: 0"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="contacts_form_container">
+                <form class="contacts_form">
+                  <p class="contacts_form_title">
+                    Запишіться
+                    <span>безкоштовно</span>
+                    та отримайте подарунок
+                  </p>
+                  <input type="text" placeholder="Ваше ім'я та призвіще" />
+                  <input type="tel" placeholder="Ваш номер телефону" />
+                  <input type="email" placeholder="Ваша електронна пошта" />
+                  <button type="button">Записатись безкоштовно</button>
+                </form>
+                <p class="form_message">
+                  Натискаючи на кнопку я погоджуюсь <br />
+                  <a href="#">з політикою конфіденційності </a>
                 </p>
-                <input type="text" placeholder="Ваше ім'я" />
-                <input type="tel" placeholder="Ваш телефон" />
-                <input type="email" placeholder="Ваш email" />
-                <button>Записатись безкоштовно</button>
-                <p>
-                  Натискаючи на кнопку я погоджуюсь з
-                  <a href="">політикою конфіденційності </a>
-                </p>
-              </form>
+              </div>
             </div>
           </div>
         </div>
