@@ -75,7 +75,7 @@
             <h1 class="hero_title">
               <span>beauty zone</span>
             </h1>
-            <button class="hero_button">Замовити дзвінок</button>
+            <button id="openModal" class="hero_button">Замовити дзвінок</button>
             <div class="hero_subtitle">
               <p>
                 Запишись та отримай безкоштовну консультацію нашого косметолога
@@ -373,9 +373,7 @@
             </ul>
             <ul class="footer_policice_confidence_list">
               <li class="policice_confidence">
-                <a href="#">
-                  Політика конфіденційності
-                </a>
+                <a href="#"> Політика конфіденційності </a>
               </li>
               <li>
                 <p class="footer_copyright">© 2023 Дані захищені.</p>
@@ -385,7 +383,34 @@
         </div>
       </div>
     </footer>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <svg class="close" id="closeModal" width="42" height="42">
+          <use href="./images/icon.svg#icon-close"></use>
+        </svg>
+        <h2 class="modal_title">Замовити дзвінок</h2>
+        <div class="modal_form_container">
+          <form class="contacts_form_modal">
+            <p class="contacts_form_modal_title_two">
+              Запишіться
+              <span>безкоштовно</span>
+              та отримайте подарунок
+            </p>
+            <input type="text" placeholder="Ваше ім'я та призвіще" />
+            <input type="tel" placeholder="Ваш номер телефону" />
+            <input type="email" placeholder="Ваша електронна пошта" />
+            <div id="loader" class="loader"></div>
+            <button id="submitButton">Записатись безкоштовно</button>
+          </form>
+          <p class="form_message_modal">
+            Натискаючи на кнопку я погоджуюсь <br />
+            <a href="#">з політикою конфіденційності </a>
+          </p>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
