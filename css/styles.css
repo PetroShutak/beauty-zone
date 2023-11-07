@@ -735,7 +735,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 174px;
+  width: 203px;
 }
 .social_footer_list {
   display: flex;
@@ -774,7 +774,6 @@ header {
   z-index: 1000;
   backdrop-filter: blur(2px);
 }
-
 
 .modal-content {
   background-color: var(--color-brand-black);
