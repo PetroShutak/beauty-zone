@@ -911,7 +911,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-
 /* scroll */
 
 ::-webkit-scrollbar {
@@ -923,7 +922,7 @@ body.modal-open {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-grey);/* Колір полоси прокрутки */
+  background: var(--color-grey); /* Колір полоси прокрутки */
   border-radius: 5px; /* Радіус кутів полоси прокрутки */
 }
 
@@ -943,3 +942,77 @@ body.modal-open {
 }
 
 /* /scroll */
+
+/* burger */
+.burger {
+  fill: var(--color-white);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+/* media */
+/* --------- */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  .nav_list,
+  .social_list {
+    display: none;
+  }
+  .nav_bar__logo {
+    font-size: 18px;
+  }
+  .nav_bar {
+    height: 60px;
+  }
+  .burger {
+    display: block;
+  }
+  .hero_content {
+    padding-left: 0;
+  }
+
+  .hero_title {
+    font-size: 48px;
+  }
+ 
+  
+  .footer_flex {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .nav_bar__logo {
+    font-size: 16px;
+  }
+  .nav_bar {
+    height: 60px;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+  .nav_bar__logo {
+    font-size: 14px;
+  }
+  .nav_bar {
+    height: 60px;
+  }
+}
