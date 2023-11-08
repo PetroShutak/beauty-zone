@@ -910,3 +910,36 @@ body.modal-open {
   width: 100vw;
   overflow: hidden;
 }
+
+
+/* scroll */
+
+::-webkit-scrollbar {
+  width: 5px; /* Ширина полоси прокрутки */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-white); /* Колір фону полоси прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey);/* Колір полоси прокрутки */
+  border-radius: 5px; /* Радіус кутів полоси прокрутки */
+}
+
+/* Стилізація горизонтальної полоси прокрутки */
+::-webkit-scrollbar-horizontal {
+  height: 5px; /* Висота полоси прокрутки */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: var(--color-brand-black2); /* Колір полоси прокрутки */
+  border-radius: 5px; /* Радіус кутів полоси прокрутки */
+}
+
+/* Стилізація кнопок прокрутки */
+::-webkit-scrollbar-button {
+  display: none; /* Приховати кнопки прокрутки */
+}
+
+/* /scroll */
