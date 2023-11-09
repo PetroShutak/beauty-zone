@@ -187,6 +187,9 @@ header {
   color: var(--color-brand-blue);
   text-transform: capitalize;
   margin-bottom: 24px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .hero_subtitle {
   font-size: 11px;
