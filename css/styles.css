@@ -181,9 +181,9 @@ header {
   }
 }
 .hero_title {
-  font-size: 46px;
+  font-size: 64px;
   font-weight: 700;
-  line-height: 54px;
+  line-height: 46px;
   color: var(--color-brand-blue);
   text-transform: capitalize;
   margin-bottom: 24px;
