@@ -703,7 +703,19 @@ header {
 
 /* footer */
 .footer {
+  position: relative;
   background-color: var(--color-brand-black);
+  background-image: url('../images/footer-line.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.footer::after {
+  content: '';
+  position: absolute;
+  width: 247px;
+  height: 152px;
+  bottom: 0;
+  right: 0;
   background-image: url('../images/footer-bg.png');
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -721,9 +733,7 @@ header {
   padding: 56px 0;
   display: flex;
   justify-content: space-between;
-  background-image: url('../images/footer-line.png');
-  background-position: center bottom;
-  background-repeat: no-repeat;
+
   color: var(--color-white);
   height: 278px;
 }
