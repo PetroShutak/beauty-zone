@@ -3,36 +3,29 @@ const modal = document.getElementById('modal');
 const closeModalBtn = document.getElementById('closeModal');
 const submitButton = document.getElementById('submitButton');
 
-function openModal() {
-  modal.style.display = 'block';
-  document.body.classList.add('modal-open');
-  loader.style.display = 'none';
-}
+const toggleModal = () => {
+  modal.classList.toggle('modal__hidden');
+  document.body.classList.toggle('modal-open');
+};
 
-function closeModal() {
-  modal.style.display = 'none';
-  document.body.classList.remove('modal-open');
-}
-
-openModalBtn.addEventListener('click', openModal);
-
-closeModalBtn.addEventListener('click', closeModal);
+openModalBtn.addEventListener('click', toggleModal);
+closeModalBtn.addEventListener('click', toggleModal);
 
 window.addEventListener('click', event => {
   if (event.target === modal) {
-    closeModal();
+    toggleModal();
   }
 });
 
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
-    closeModal();
+    toggleModal();
   }
 });
 
 submitButton.addEventListener('click', () => {
   loader.style.display = 'block';
   setTimeout(() => {
-    closeModal();
+    toggleModal();
   }, 2000);
 });
