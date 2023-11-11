@@ -105,7 +105,7 @@ body {
 /* Container */
 .container {
   width: 100%;
-  max-width: 360px;
+  /* max-width: 360px; */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -267,19 +267,58 @@ header {
   }
 }
 
+.reincarnation_section {
+  display: flex;
+  gap: 40px;
+  padding: 40px 0;
+}
+.reincarnation_image {
+  display: none;
+}
+
+.reincarnation_title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37.5px;
+  color: var(--color-brand-black);
+  margin-bottom: 32px;
+}
+.reincarnation_title span {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37.5px;
+  color: var(--color-brand-blue);
+  text-transform: capitalize;
+}
+.reincarnation_description {
+  max-width: 709px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  color: var(--color-brand-black2);
+}
+.first_paragraph {
+  margin-bottom: 20px;
+}
+.reincarnation_span {
+  text-transform: capitalize;
+  color: var(--color-brand-black);
+  font-weight: 700;
+}
+
 /* media */
 
 @media screen and (min-width: 425px) {
   .container {
     padding: 0 24px;
-    max-width: 425px;
+    /* max-width: 425px; */
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 24px;
-    max-width: 768px;
+    /* max-width: 768px; */
   }
   .nav_bar {
     padding: 16px 0;
@@ -344,6 +383,46 @@ header {
 
       margin-bottom: 10px;
     }
+  }
+  .reincarnation_image {
+    display: none;
+  }
+  /* reincarnation_section */
+  .reincarnation_section {
+    display: flex;
+    gap: 40px;
+    padding: 40px 0;
+  }
+  
+  .reincarnation_title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    color: var(--color-brand-black);
+    margin-bottom: 32px;
+  }
+  .reincarnation_title span {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    color: var(--color-brand-blue);
+    text-transform: capitalize;
+  }
+  .reincarnation_description {
+    max-width: 709px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-brand-black2);
+  }
+  .first_paragraph {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .reincarnation_span {
+    text-transform: capitalize;
+    color: var(--color-brand-black);
+    font-weight: 700;
   }
 }
 
@@ -441,6 +520,162 @@ header {
     background-color: var(--color-brand-black);
     color: var(--color-white);
   }
+  /* reincarnation_section */
+  .reincarnation_section {
+    display: flex;
+    gap: 40px;
+    padding: 40px 0;
+  }
+  
+  .reincarnation_title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    color: var(--color-brand-black);
+    margin-bottom: 32px;
+  }
+  .reincarnation_title span {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    color: var(--color-brand-blue);
+    text-transform: capitalize;
+  }
+  .reincarnation_description {
+    max-width: 709px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-brand-black2);
+  }
+  .first_paragraph {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .reincarnation_span {
+    text-transform: capitalize;
+    color: var(--color-brand-black);
+    font-weight: 700;
+  }
+  
+  /* ----stars */
+  .star-blue::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/about-star-blue.png');
+    background-size: 40px;
+    animation-name: star-blue;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes star-blue {
+    40% {
+      transform: rotate(180deg) scale(1.1);
+    }
+  
+    70% {
+      transform: rotate(260deg) scale(1.3);
+    }
+  
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  .star-dark::before {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 361px;
+    right: 332px;
+    background-repeat: no-repeat;
+    background-image: url('../images/about-star-dark.png');
+    background-size: 64px;
+    animation-name: star-dark;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes star-dark {
+    40% {
+      transform: rotate(180deg) scale(1.1);
+    }
+  
+    70% {
+      transform: rotate(260deg) scale(1.3);
+    }
+  
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  .star-small::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 277px;
+    right: 35px;
+    background-repeat: no-repeat;
+    background-image: url('../images/about-star-small.png');
+    background-size: 16px;
+    animation-name: star-small;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes star-small {
+    40% {
+      transform: rotate(180deg) scale(1.1);
+    }
+  
+    70% {
+      transform: rotate(260deg) scale(1.3);
+    }
+  
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  .star-dark-mobile::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 563px;
+    right: 83px;
+    background-repeat: no-repeat;
+    background-image: url('../images/about-star-dark.png');
+    background-size: 40px;
+    animation-name: star-dark-mobile;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes star-dark-mobile {
+    40% {
+      transform: rotate(180deg) scale(1.02);
+    }
+  
+    70% {
+      transform: rotate(260deg) scale(1.05);
+    }
+  
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  /* ----/stars */
 }
 @media screen and (min-width: 1280px) {
   .container {
@@ -449,181 +684,32 @@ header {
   .nav_bar__logo:hover {
     scale: 1.1;
   }
+  .reincarnation_image {
+    display: block;
+    position: relative;
+  }
+  
+  .top_image {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .bottom_image {
+    display: block;
+    padding-left: 120px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1288px;
   }
-}
-
-/* reincarnation_section */
-
-.reincarnation_section {
-  display: flex;
-  gap: 40px;
-  padding: 40px 0;
-}
-.reincarnation_image {
-  position: relative;
-}
-
-.top_image {
-  display: block;
-  margin-bottom: 40px;
-}
-.bottom_image {
-  display: block;
-  padding-left: 196px;
-}
-.reincarnation_title {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 74px;
-  color: var(--color-brand-black);
-  margin-bottom: 32px;
-}
-.reincarnation_title span {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 74px;
-  color: var(--color-brand-blue);
-  text-transform: capitalize;
-}
-.reincarnation_description {
-  max-width: 709px;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--color-brand-black2);
-}
-.first_paragraph {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.reincarnation_span {
-  text-transform: capitalize;
-  color: var(--color-brand-black);
-  font-weight: 700;
-}
-
-/* ----stars */
-.star-blue::before {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 20px;
-  right: 0;
-  background-repeat: no-repeat;
-  background-image: url('../images/about-star-blue.png');
-  background-size: 40px;
-  animation-name: star-blue;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes star-blue {
-  40% {
-    transform: rotate(180deg) scale(1.1);
-  }
-
-  70% {
-    transform: rotate(260deg) scale(1.3);
-  }
-
-  100% {
-    transform: rotate(360deg) scale(1);
+  .bottom_image {
+    display: block;
+    padding-left: 168px;
   }
 }
 
-.star-dark::before {
-  content: '';
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  top: 361px;
-  right: 332px;
-  background-repeat: no-repeat;
-  background-image: url('../images/about-star-dark.png');
-  background-size: 64px;
-  animation-name: star-dark;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-}
 
-@keyframes star-dark {
-  40% {
-    transform: rotate(180deg) scale(1.1);
-  }
 
-  70% {
-    transform: rotate(260deg) scale(1.3);
-  }
-
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-.star-small::before {
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 277px;
-  right: 35px;
-  background-repeat: no-repeat;
-  background-image: url('../images/about-star-small.png');
-  background-size: 16px;
-  animation-name: star-small;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes star-small {
-  40% {
-    transform: rotate(180deg) scale(1.1);
-  }
-
-  70% {
-    transform: rotate(260deg) scale(1.3);
-  }
-
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-.star-dark-mobile::before {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 563px;
-  right: 83px;
-  background-repeat: no-repeat;
-  background-image: url('../images/about-star-dark.png');
-  background-size: 40px;
-  animation-name: star-dark-mobile;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes star-dark-mobile {
-  40% {
-    transform: rotate(180deg) scale(1.02);
-  }
-
-  70% {
-    transform: rotate(260deg) scale(1.05);
-  }
-
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-/* ----/stars */
 
 /* @media screen and (max-width: 1124px) {
   .reincarnation_image {
@@ -969,6 +1055,7 @@ header {
   flex-direction: column;
   gap: 16px;
   width: 203px;
+  margin-bottom: 24px;
 }
 .social_footer_list {
   display: flex;
@@ -1148,9 +1235,10 @@ header {
 
 /* scroll */
 
-::-webkit-scrollbar {
-  width: 5px; /* Ширина полоси прокрутки */
-}
+/* ::-webkit-scrollbar {
+  width: 5px; /* Ширина полоси прокрутки
+} 
+*/
 
 ::-webkit-scrollbar-track {
   background: var(--color-white); /* Колір фону полоси прокрутки */
