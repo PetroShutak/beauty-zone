@@ -780,6 +780,9 @@ header {
     color: var(--color-brand-black);
     font-weight: 700;
   }
+  .why_section {
+  padding-top: 40px;
+}
   .why_section_title {
     margin: 0 auto;
     text-align: center;
